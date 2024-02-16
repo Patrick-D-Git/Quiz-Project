@@ -4,7 +4,8 @@ from quiz_brain import Quizbrain
 
 question_bank = []  # This is where the object questions are stored.
 
-for question in question_data:
+for question in question_data:  # converts item from question_data into a Question object and place it
+    # in question_bank
     new_question = Question(question["text"], question["answer"])
     question_bank.append(new_question)
 
