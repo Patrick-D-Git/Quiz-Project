@@ -2,7 +2,7 @@ from question_model import Question
 from data import question_data
 from quiz_brain import Quizbrain
 
-question_bank = []
+question_bank = []  # This is where the object questions are stored.
 
 for question in question_data:
     new_question = Question(question["text"], question["answer"])
